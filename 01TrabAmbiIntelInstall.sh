@@ -4,8 +4,8 @@
 # PostGIS: http://trac.osgeo.org/postgis/wiki/UsersWikiPostGIS24UbuntuPGSQL10Apt
 
 
-gitusername="Hexaminer"
-gituseremail="16254422+hexaminer@users.noreply.github.com"
+gitusername="Gil96"
+gituseremail="36649338+Gil96@users.noreply.github.com"
 
 postgresPassword='raspberry'
 
