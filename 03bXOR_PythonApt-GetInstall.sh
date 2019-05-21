@@ -15,6 +15,22 @@ ls#! /bin/bash
 sudo pip install django
 sudo pip install psycopg2
 
+# https://tecadmin.net/install-django-on-debian-9-stretch/
+mkdir ~/git/Smartfarm/Project
+cd ~/git/Smartfarm/Project
+django-admin startproject G18SmartFarmApp
+cd G18SmartFarmApp
+# nesta altura configura-se o ficheiro Project/G18SmartFarmApp/G18SmartFarmApp/setting.py (principalmente a ligação ao Postgresql)
+python manage.py createsuperuser --username admin --email aluno@ist87847.33mail.com
+
+# User on database:
+#"SELECT id, password, last_login, is_superuser, username, first_name, last_name, email, is_staff, is_active, date_joined
+#	FROM public.auth_user;"
+
+# Quando pergunta pela password colocamos "raspberry"
+
+python manage.py runserver 0.0.0.0:8000
+ 
 
 : '
 /home/pi/.local/bin
