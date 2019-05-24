@@ -20,6 +20,9 @@ mkdir ~/git/Smartfarm/Project
 cd ~/git/Smartfarm/Project
 django-admin startproject G18SmartFarmApp
 cd G18SmartFarmApp
+
+python manage.py migrate # faltava isto q
+
 # nesta altura configura-se o ficheiro Project/G18SmartFarmApp/G18SmartFarmApp/setting.py (principalmente a ligação ao Postgresql)
 python manage.py createsuperuser --username admin --email aluno@ist87847.33mail.com
 
