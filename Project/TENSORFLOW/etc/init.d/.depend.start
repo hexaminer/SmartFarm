@@ -1,0 +1,5 @@
+TARGETS = killprocs rsync single ondemand rc.local
+INTERACTIVE =
+single: killprocs
+ondemand: rsync
+rc.local: rsync
